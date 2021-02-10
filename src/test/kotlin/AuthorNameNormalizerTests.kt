@@ -1,6 +1,7 @@
 import assertk.assertThat
+import assertk.assertions.hasClass
 import assertk.assertions.isEqualTo
-import kotlin.test.assertFailsWith
+import assertk.assertions.isFailure
 import org.junit.Before
 import org.junit.Ignore
 import org.junit.Test
@@ -64,8 +65,8 @@ class AuthorNameNormalizerTests {
     @Ignore
     @Test
     fun `throws when name contains two commas`() {
-        assertFailsWith(IllegalArgumentException::class) {
+        assertThat {
             normalizer.normalize("Thurston, Howell, III")
-        }
+        }.isFailure().hasClass(IllegalArgumentException::class)
     }
 }
