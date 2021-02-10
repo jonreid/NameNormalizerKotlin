@@ -10,7 +10,6 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
 }
 
 group 'org.qualitycoding'
-version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
