@@ -15,5 +15,4 @@ dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
     testImplementation 'com.willowtreeapps.assertk:assertk-jvm:0.23'
     testImplementation 'junit:junit:4.13.1'
-    testRuntimeOnly 'junit:junit:4.13'
 }
