@@ -1,3 +1,5 @@
+group 'org.qualitycoding'
+
 plugins {
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.4.21'
@@ -8,8 +10,6 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 }
-
-group 'org.qualitycoding'
 
 repositories {
     mavenCentral()
