@@ -1,11 +1,11 @@
 plugins {
-    id("java")
+    java
     id("org.jetbrains.kotlin.jvm") version "1.4.30"
 }
 
 group = "org.qualitycoding"
 
-tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
