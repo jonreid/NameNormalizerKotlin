@@ -1,9 +1,9 @@
 plugins {
-    id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.4.30'
+    id "java"
+    id "org.jetbrains.kotlin.jvm" version "1.4.30"
 }
 
-group 'org.qualitycoding'
+group "org.qualitycoding"
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
     kotlinOptions {
@@ -17,6 +17,6 @@ repositories {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
-    testImplementation 'com.willowtreeapps.assertk:assertk-jvm:0.23'
-    testImplementation 'junit:junit:4.13.1'
+    testImplementation "com.willowtreeapps.assertk:assertk-jvm:0.23"
+    testImplementation "junit:junit:4.13.1"
 }
